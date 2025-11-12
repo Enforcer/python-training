@@ -12,6 +12,8 @@ a_dict["name"] = "Sebastian"
 a_dict["name"]  # "Sebastian"
 del a_dict["name"]
 a_dict["name"]  # raises KeyError, dict is now empty
+a_dict.get("name")  # None
+a_dict.get("name", "UNKOWN")  # "UNKOWN"
 
 # keys, values and both
 a_dict = {"name": "Sebastian", "main_lang": "Python"}

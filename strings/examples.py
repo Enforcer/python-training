@@ -1,8 +1,12 @@
 "a string"
 
 'a string'
-"""a string"""
-'''a string'''
+"""
+a string
+"""
+'''
+a string
+'''
 
 # length of a string
 len("a string")  # 8
@@ -36,8 +40,8 @@ a_string[0:2] = "ab"  # TypeError
 # reversing a string
 "kajak"[::-1]
 a_string = "a string"
-a_string == a_string[::-1]
-"abcdef"[::-1] 'fedcba'
+a_string == a_string[::-1]  # is palindrome?
+"abcdef"[::-1]  # 'fedcba'
 
 # Selected methods
 "string".endswith("s")
