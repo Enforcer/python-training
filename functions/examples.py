@@ -34,6 +34,12 @@ def add(*numbers: int) -> int:
 
 add(1, 2, 3, 5)  # 11
 
+# accepts sequences unpacking
+a_tuple = (1, 2, 3, 5)
+add(*a_tuple)  # 11
+a_list = [1, 2, 3, 5]
+add(*a_list)  # 11
+
 # function with named arguments
 def configure(**options: int) -> None:
     for key, value in options.items():
@@ -43,6 +49,9 @@ configure(threads=2, processes=4)
 # threads = 2
 # processes = 4
 
+# accepts dicts unpacking
+a_dict = {"threads": 2, "processes": 4}
+configure(**a_dict)
 
 # anonymous function, lambda
 ## Basics
@@ -68,3 +77,9 @@ print(a_list_of_tuples)  # [('Agatha', 52), ('Jack', 44)]
 # by first element in a tuple
 a_list_of_tuples.sort(key=lambda element: element[0])
 print(a_list_of_tuples)  # [('Agatha', 52), ('Jack', 44)]
+
+# by multiple criteria
+a_list_of_lists = [[1, 2, 3], [6], [5, 8]]
+# sort first from the biggest sum of a nested list, then by number of elements from the smallest to the biggest
+a_list_of_lists.sort(key=lambda element: (-sum(element), len(element)))
+print(a_list_of_lists)  #

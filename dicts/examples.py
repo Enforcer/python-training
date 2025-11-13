@@ -29,8 +29,10 @@ list(a_dict.items())  # [('name', 'Sebastian'), ('main_lang', 'Python')]
 # Combining dicts
 one_dict = {"name": "Sebastian"}
 another_dict = {"main_lang": "Python"}
-dict(one_dict, **another_dict)
-{**one_dict, **another_dict}
+
+dict(one_dict, **another_dict)  # builds a new dict
+{**one_dict, **another_dict}  # builds a new dict
+
 one_dict.update(another_dict)  # modify one dict with items from another one
 
 # Special dict subclasses
