@@ -83,7 +83,7 @@ config["threads"]  # 123
 "processes" in config  # False
 
 
-# Key values - dict and set
+# Using custom types in sets and as keys in dicts
 class Person:
     def __init__(self, name: str, age: int) -> None:
         self.name = name
@@ -120,6 +120,18 @@ print(points_by_person)
 # {<__main__.Person object at 0x1051a4980>: 0}
 print(set(points_by_person.keys()))
 # {<__main__.Person object at 0x1051a4980>}
+
+# Properties and "private" attributes
+class Car:
+    def __init__(self, mileage: int) -> None:
+        self._mileage = mileage  # "private" by convention
+
+    def _tamper_with_mileage(self, new_mileage: int) -> None:
+        self._mileage = mileage
+
+    @property
+    def mileage(self) -> int:  # read-only
+        return self._mileage
 
 # Inheritance
 class Person:
