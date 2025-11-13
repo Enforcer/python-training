@@ -35,7 +35,7 @@ finally:
     f.close()
 
 
-# Catching all - don't do this at come
+# Catching all - don't do this at home
 try:
     1 / 0
 except:

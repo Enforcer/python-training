@@ -198,3 +198,17 @@ class BasicAuth(Authentication):
 
     def authenticate(self) -> bool:
         return self.username == 'admin'
+
+
+# Protocols
+from typing import Protocol
+
+
+class Foo(Protocol):
+    def foo(self) -> None:
+        ...
+
+
+class Bar:
+    def foo(self) -> None:  # same signature, will be considered compatible
+        pass
