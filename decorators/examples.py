@@ -44,3 +44,22 @@ def add(a, b):
     return a + b
 
 add  # <function add at 0x107ea1e80>
+
+
+# Decorators factories
+from functools import wraps
+
+
+def multiply_result(how_many_times):
+    def _multiply_result(fun):
+        @wraps(fun)  # < copies name from fun to new_fun
+        def new_fun(*args, **kwargs):
+            result = fun(*args, **kwargs)
+            return result * how_many_times
+        return new_fun
+    return _multiply_result
+
+
+@multiply_result(3)
+def add(a, b):
+    return a + b
