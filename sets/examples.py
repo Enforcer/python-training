@@ -27,6 +27,7 @@ set_a.update({4, 5, 6})
 set_a = set()
 set_a.discard(1)  # Does nothing if element not in set
 set_a.remove(1)  # Raises exception
+{1, 2, 3}.pop()  # Remove 'random' element and return it, exception if set is empty
 
 # union - combine unique elements
 set_a = {1, 2, 3}
@@ -53,8 +54,6 @@ set_a ^ set_b  # {1, 4}
 set_a.symmetric_difference(set_b)  # {1, 4}
 
 # Other operations
-{1, 2, 3}.pop()  # Remove 'random' element and return it, exception if set is empty
-
 {1, 2, 3}.isdisjoint({4, 5})  # True, no common elements
 {1, 2, 3}.issuperset({2})  # True, {2} present in first set
 {1, 2, 3}.issubset({2})  # False, {2} present in first set
