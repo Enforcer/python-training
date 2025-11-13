@@ -35,7 +35,6 @@ def context_manager():
 with context_manager():
     print("Inside")
 
-
 # Entering
 # Inside
 # Existing
