@@ -42,5 +42,20 @@ for number in numbers_up_to(3):
   print(number)
 
 
+# Built-in generator
 for number in range(3):
     print(number)  # 0 1 2
+
+
+# Counting with start and stop (exclusive) and step
+for number in range(10, 15, 1):
+    print(number)  # 10, 11, 12, 13, 14
+
+
+# using iter() and next() on iterating-capable object
+gen = iter(range(3))  # start iteration over generator
+next(gen)  # 0
+next(gen)  # 1
+next(gen)  # 2
+next(gen)  # 3
+next(gen)  # raises an exception StopIteration

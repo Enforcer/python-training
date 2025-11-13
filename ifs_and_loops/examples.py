@@ -44,6 +44,14 @@ a_string = "Python"
 for letter in a_string:
     print(letter)
 
+# Control statements
+for letter in ("a", "b", "c"):
+    if letter == "a":
+        continue # skip to the next iteration
+    if letter == "c":
+        break  # stop loop immediately
+    print(letter)
+
 # Unpacking in a loop
 a_list_of_tuples = [("a", 1), ("b", 2)]
 for letter, number in a_list_of_tuples:
