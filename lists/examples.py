@@ -1,6 +1,8 @@
 # defining list
 [1, 2, 3]
 # list(another_object)
+list("Sebastian")
+# ['S', 'e', 'b', 'a', 's', 't', 'i', 'a', 'n']
 
 # starting with empty list
 []

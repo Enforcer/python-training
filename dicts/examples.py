@@ -42,7 +42,7 @@ from collections import Counter
 counter = Counter("dcaad")  # Counter({'d': 2, 'a': 2, 'c': 1})
 # most common element and number of occurrences
 counter.most_common(1)  # [('d', 2)] (one of most common)
-counter = Counter({1, 2, 3})  # ?
+counter = Counter([1, 2, 3])  # ?
 
 ## defaultdict
 from collections import defaultdict

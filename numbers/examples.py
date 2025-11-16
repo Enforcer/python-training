@@ -40,6 +40,8 @@ Decimal(str(0.2))
 Decimal("0.2")
 
 Decimal(2) * 5  # Decimal('10')
+Decimal(2) / 2  # Decimal('1')
+Decimal("0.5") * Decimal("1.11")  # Decimal('0.555')
 
 # rounding
 round(1.5)  # 2
