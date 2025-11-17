@@ -9,6 +9,17 @@ def my_function(a, b):
     pass
 
 
+# '@' is just a syntactic sugar
+def another_fun(a, b): pass
+
+another_fun = decorator(another_fun)
+
+# is equivalent to
+
+@decorator
+def another_fun(a, b): pass
+
+
 # More complex example
 def double_result(fun):
     def new_fun(*args, **kwargs):

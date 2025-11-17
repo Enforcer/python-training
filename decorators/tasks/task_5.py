@@ -1,5 +1,6 @@
 # finish implementation of a decorator factory `requires_role`
-# It should return a decorator that will check if role passed as keyword argument to the function is equal to the one configured.
+# It should return a decorator that will check if role passed as keyword argument
+# to the function is equal to the one configured.
 # If the role is ok, then proceed with the function.
 # If the role is different than expected or not present in kwargs, then return "PERMISSION_DENIED" string.
 #
