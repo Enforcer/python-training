@@ -6,7 +6,9 @@ from contextlib import contextmanager
 
 @contextmanager
 def timeit():
+    start = time.time()
     yield
+    # here I am AFTER
 
 
 with timeit():
