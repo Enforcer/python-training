@@ -19,6 +19,9 @@ len("a string")  # 8
 # combining
 "a string" + " " + "another string"
 
+# joining
+" ".join(["Ala", "ma", "kota"])
+
 # counting elements by value
 "my oh my".count("m")  # 2
 "my oh my".count("my")  # 2
