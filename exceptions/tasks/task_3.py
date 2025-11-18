@@ -1,5 +1,7 @@
-# Open a file "some_file" manully in read-only mode ('r') by using open() as a function, not a context manager.
-# Try writing to the file in try..except block, catching the appropriate exception.
-# Don't forget to close the file in finally or else block.
-# After everything, try to read the file to make sure it's actually closed.
-#   You should get another exception, but you don't have to catch it this time.
+# Ask user for their name using input() function.
+
+# If they try to end the program using CTRL+C (interrupt), do not let them do that!
+# Catch KeyboardInterrupt exception and print a message that you won't stop unless they give you the name.
+# If the input they enter is empty, also recognize this situation and retry.
+# Do it until they give you a non-empty string.
+# TIP: use .strip() to remove whitespaces from input() result.
