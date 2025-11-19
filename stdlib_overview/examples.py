@@ -40,6 +40,14 @@ with open('names.csv', newline='') as csvfile:
         print(row['first_name'], row['last_name'])
 
 
+# datetime
+from datetime import datetime, timedelta, timezone
+
+dt = datetime.now(tz=timezone.utc)
+print(dt)
+
+print(dt + timedelta(days=1, hours=3))
+
 # socket - UDP sending
 import socket
 
