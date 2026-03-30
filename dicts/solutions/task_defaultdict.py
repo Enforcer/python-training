@@ -10,7 +10,6 @@ a_dict["Poland"].append("Warsaw")
 a_dict["Poland"].append("Lodz")
 a_dict["Poland"].append("Krakow")
 
-a_dict = defaultdict(list)
 a_dict["Germany"].append("Koln")
 a_dict["Germany"].append("Berlin")
 a_dict["Germany"].append("Munchen")

@@ -8,8 +8,8 @@
 #
 # *Convert elements of variadic arguments to strings so it can also work with e.g. integers
 
-assert function(",", "a", "b") == "a,b"
-assert function("") == ""
+assert joiner(",", "a", "b") == "a,b"
+assert joiner("") == ""
 print("OK, basic part")
-assert function("|", 1, 2) == "1|2"
+assert joiner("|", 1, 2) == "1|2"
 print("OK, advanced part")

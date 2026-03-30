@@ -1,4 +1,4 @@
-# write a function `add_to_dict` that will accept a three arguments:
+# write a function `add_to_dict` that will accept three arguments:
 # - a dictionary
 # - a key
 # - a value
