@@ -1,3 +1,4 @@
+"""unittest is compatible with pytest."""
 import unittest
 
 

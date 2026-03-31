@@ -1,9 +1,7 @@
-import unittest
+import pytest
 
 
-class TestStringsImmutability(unittest.TestCase):
-    def test_attempt_to_substitute_letter_raises_exception(self) -> None:
-        a_string = "example"
-
-        with self.assertRaises(TypeError):
-            a_string[0] = "a"
+def test_attempt_to_substitute_letter_raises_exception() -> None:
+    a_string = "example"
+    with pytest.raises(TypeError):
+        a_string[0] = "a"

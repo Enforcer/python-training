@@ -1,15 +1,13 @@
 """Implement set tests.
 
 Testing scenarios:
- - new set has len(0)
- - set with one added element has len(1) AND element can be found inside
- - set with one SPECIFC element, e.g. "1", after doing .pop() returns that element
- - move set creation from test to setUp. Does it help with test readability?
+ 1. new set has len(0)
+ 2. set with one added element has len(1) AND element can be found inside
+ 3. set with one SPECIFIC element, e.g. "1", after doing .pop() returns that element
+ 4. *move set creation from the test to fixture. Does it help with test readability?
+ 5. Turn test from point 3 into parametrized test
 
 """
-import unittest
 
-
-class Task1TestCase(unittest.TestCase):
-    def test_(self) -> None:
-        pass
+def test_() -> None:
+    pass

@@ -1,17 +1,17 @@
 cd testing
 
 # Run tests
-python3.14 -m unittest
+uv run pytest
 
 # Run tests and show tests names
-python3.14 -m unittest -v
+uv run pytest -v
 
-# Run tests in specific TestCase class
-python3.14 -m unittest module_name.TestCaseClassName
+# Run tests in specific module
+uv run pytest tests/path/to/test_module.py
 e.g.
-python3.14 -m unittest test_example_unittest.ExampleAssertions
+uv run pytest tests/test_lists/test_appending.py
 
-# Run specifc test
-python3.14 -m unittest module_name.TestCaseClassName.method_name
+# Run specific test
+uv run pytest tests/path/to/test_module.py::test_name_of_the_test
 e.g.
-python3.14 -m unittest test_example_unittest.ExampleAssertions.test_
+uv run pytest tests/test_lists/test_appending.py::TestAppending::test_appending_one_el_makes_len_1
