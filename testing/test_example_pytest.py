@@ -1,3 +1,5 @@
+from typing import Iterator
+
 import pytest
 
 
@@ -33,6 +35,34 @@ def empty_list() -> list:
 
 def test_empty_list_has_size_0(empty_list: list) -> None:
     assert len(empty_list) == 0
+
+
+@pytest.fixture()
+def empty_list_with_cleanup() -> Iterator[list]:
+    a_list = []
+    yield a_list
+    a_list.clear()
+
+
+@pytest.fixture(scope="session")
+def session_fixture() -> Iterator[None]:
+    print("Before first test")
+    yield
+    print("After last test")
+
+
+@pytest.fixture(scope="module")
+def module_fixture() -> Iterator[None]:
+    print("Before first test in a module")
+    yield
+    print("After last test in a module")
+
+
+@pytest.fixture(scope="function")
+def function_fixture() -> Iterator[None]:
+    print("Before every test")
+    yield
+    print("After every test")
 
 
 def test_index_raises_index_error_for_absent_element(empty_list: list) -> None:
