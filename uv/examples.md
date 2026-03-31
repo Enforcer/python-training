@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
 ## Managing script dependencies
 
-### Add depdendencies and initialize metadata if they are not there
+### Add dependencies and initialize metadata if they are not there
 
 ```
 uv add --script <filename.py> [--python <python version>] <package>
