@@ -9,7 +9,7 @@
 # - Executive should return whatever SeniorEmployee returns (use super()) and add 10_000
 
 
-assert Employee(1000, 1).calculate_salary() === 1000
+assert Employee(1000, 1).calculate_salary() == 1000
 assert SeniorEmployee(2000, 5).calculate_salary() == 2500
 assert Executive(10_000, 10).calculate_salary() == 21000
 print("OK")
