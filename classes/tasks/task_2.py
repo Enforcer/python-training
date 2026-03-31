@@ -4,5 +4,5 @@
 
 
 assert Square(4).area() == 16
-assert Rectangle(4).area() == 16
+assert Rectangle(4, 2).area() == 8
 print("OK")
