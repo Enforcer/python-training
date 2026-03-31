@@ -36,10 +36,12 @@ def test_appends_1_if_1_and_empty_list_given() -> None:
 
     assert result == [1]
 
+
 def test_appends_1_if_1_and_no_list_given() -> None:
     result = append_squared(1)
 
     assert result == [1]
+
 
 def test_appends_4_if_2_and_not_empty_list_given() -> None:
     a_list = [1]
@@ -47,6 +49,7 @@ def test_appends_4_if_2_and_not_empty_list_given() -> None:
     result = append_squared(2, a_list)
 
     assert result == [1, 4]
+
 
 def test_appends_4_if_2_and_no_list_given() -> None:
     result = append_squared(2)

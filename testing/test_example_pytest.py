@@ -40,6 +40,11 @@ def test_index_raises_index_error_for_absent_element(empty_list: list) -> None:
         empty_list.index(0)
 
 
+def is_underage(age: int) -> bool:
+    """Function to be tested."""
+    return age < 18
+
+
 @pytest.mark.parametrize("age", [1, 2, 3])
 def test_underage_detection(age: int) -> None:
     """Parametrized test.
@@ -49,7 +54,3 @@ def test_underage_detection(age: int) -> None:
     result = is_underage(age)
 
     assert result is True
-
-
-def is_underage(age: int) -> bool:
-    return age < 18
